@@ -55,10 +55,15 @@
 			<artifactId>TableLayout</artifactId>
 			<version>20050920</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.scijava</groupId>
 			<artifactId>jep</artifactId>
 			<version>2.4.2</version>
+		</dependency> -->
+		<dependency>
+			<groupId>jopenchart</groupId>
+			<artifactId>charting</artifactId>
+			<version>0.94</version>
 		</dependency>
 	</dependencies>
 

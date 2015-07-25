@@ -21,7 +21,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-import net.Server;
+import org.shirazu.gridcourse.net.Server;
 
 @Entity
 public class Resource{
