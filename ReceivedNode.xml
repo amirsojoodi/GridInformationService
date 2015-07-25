@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node nodeID="0" name="Linux amd64">
+	<resource resourceName="Intel CPU">
+		<resourceType>CPU</resourceType>
+		<attribute>
+			<attributeType>CPUSpeed</attributeType>
+			<value>3100.0</value>
+		</attribute>
+	</resource>
+	<resource resourceName="RAM">
+		<resourceType>RAM</resourceType>
+		<attribute>
+			<attributeType>TotalMemory</attributeType>
+			<value>5854.88</value>
+		</attribute>
+	</resource>
+	<resource resourceName="Linux 3.16.0-43-generic amd64">
+		<resourceType>OS</resourceType>
+	</resource>
+	<resource resourceName="SSTORAGE">
+		<resourceType>SStorage</resourceType>
+		<attribute>
+			<attributeType>TotalStorage</attributeType>
+			<value>1667.0</value>
+		</attribute>
+	</resource>
+</node>

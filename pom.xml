@@ -6,13 +6,14 @@
 	<groupId>org.shirazu.gridcourse</groupId>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>GridInformationService</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>GridInformationService</name>
 
 	<properties>
 		<scm.url>scm:git:https://github.com/amirsojoodi/GridInformationService.git</scm.url>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<build.time>${maven.build.timestamp}</build.time>
+		<libsigar.version>amd64-linux</libsigar.version>
 	</properties>
 
 	<scm>
@@ -41,6 +42,13 @@
 			<version>1.6.4</version>
 		</dependency>
 		<dependency>
+			<groupId>sigar.native</groupId>
+			<artifactId>libsigar</artifactId>
+			<version>1.6.4</version>
+			<classifier>${libsigar.version}</classifier>
+			<type>so</type>
+		</dependency>
+		<dependency>
 			<groupId>com.jgoodies</groupId>
 			<artifactId>jgoodies-forms</artifactId>
 			<version>1.7.2</version>
@@ -55,11 +63,8 @@
 			<artifactId>TableLayout</artifactId>
 			<version>20050920</version>
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.scijava</groupId>
-			<artifactId>jep</artifactId>
-			<version>2.4.2</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.scijava</groupId> <artifactId>jep</artifactId> 
+			<version>2.4.2</version> </dependency> -->
 		<dependency>
 			<groupId>jopenchart</groupId>
 			<artifactId>charting</artifactId>

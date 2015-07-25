@@ -654,7 +654,7 @@ public class ClientFrame extends JFrame {
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	public void help_AboutMenuItemActionPerformed(ActionEvent e) {
 		JOptionPane.showMessageDialog(null, "GIS Connection Manager" + "\n"
-				+ "Version C.2.0");
+				+ "Client Version: 0.0.1");
 	}
 
 	public int getIntervalSeconds() {

@@ -657,7 +657,7 @@ public class ServerFrame extends JFrame {
 
 	public void help_AboutMenuItemActionPerformed(ActionEvent e) {
 		JOptionPane.showMessageDialog(null, "GIS Connection Manager" + "\n"
-				+ "Version S.2.0");
+				+ "Server Version: 0.0.1");
 	}
 
 	public void tools_QueryManagerMenuItemActionPerformed(ActionEvent e) {
