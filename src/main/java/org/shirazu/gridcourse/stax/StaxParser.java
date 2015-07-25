@@ -1,10 +1,19 @@
-package stax;
+package org.shirazu.gridcourse.stax;
 
-import gis.Attribute;
-import gis.AttributeType;
-import gis.Node;
-import gis.Resource;
-import gis.ResourceType;
+//============================================================================
+//Author      : Fatemeh Marzban, Amir Hossein Sojoodi
+//Version     : 0.0.1
+//Year        : 2014
+//Copyright   : GNU
+//Description : Grid Information Service in Java
+//============================================================================
+
+
+import org.shirazu.gridcourse.gis.Attribute;
+import org.shirazu.gridcourse.gis.AttributeType;
+import org.shirazu.gridcourse.gis.Node;
+import org.shirazu.gridcourse.gis.Resource;
+import org.shirazu.gridcourse.gis.ResourceType;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -21,6 +30,7 @@ import javax.xml.stream.events.EndElement;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 
+@SuppressWarnings("restriction")
 public class StaxParser {
 	static final String NODE = "node";
 	static final String NODEID = "nodeID";

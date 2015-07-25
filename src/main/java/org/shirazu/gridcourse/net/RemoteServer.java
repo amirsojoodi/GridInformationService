@@ -1,4 +1,12 @@
-package net;
+package org.shirazu.gridcourse.net;
+
+//============================================================================
+//Author      : Fatemeh Marzban, Amir Hossein Sojoodi
+//Version     : 0.0.1
+//Year        : 2014
+//Copyright   : GNU
+//Description : Grid Information Service in Java
+//============================================================================
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

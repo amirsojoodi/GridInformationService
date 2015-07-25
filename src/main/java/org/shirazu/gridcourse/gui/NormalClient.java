@@ -1,6 +1,14 @@
-package gui;
+package org.shirazu.gridcourse.gui;
 
-import gis.Mode;
+//============================================================================
+//Author      : Fatemeh Marzban, Amir Hossein Sojoodi
+//Version     : 0.0.1
+//Year        : 2014
+//Copyright   : GNU
+//Description : Grid Information Service in Java
+//============================================================================
+
+import org.shirazu.gridcourse.gis.Mode;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -8,8 +16,8 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.util.Scanner;
 
-import net.Client;
-import net.RemoteServer;
+import org.shirazu.gridcourse.net.Client;
+import org.shirazu.gridcourse.net.RemoteServer;
 
 public class NormalClient {
 	private Client client;

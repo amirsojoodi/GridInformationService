@@ -1,9 +1,17 @@
-package net;
+package org.shirazu.gridcourse.net;
 
-import gis.Attribute;
-import gis.Node;
-import gis.Resource;
-import gui.ServerFrame;
+//============================================================================
+//Author      : Fatemeh Marzban, Amir Hossein Sojoodi
+//Version     : 0.0.1
+//Year        : 2014
+//Copyright   : GNU
+//Description : Grid Information Service in Java
+//============================================================================
+
+import org.shirazu.gridcourse.gis.Attribute;
+import org.shirazu.gridcourse.gis.Node;
+import org.shirazu.gridcourse.gis.Resource;
+import org.shirazu.gridcourse.gui.ServerFrame;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -20,7 +28,7 @@ import javax.persistence.TemporalType;
 import javax.persistence.TypedQuery;
 import javax.swing.JOptionPane;
 
-import stax.StaxParser;
+import org.shirazu.gridcourse.stax.StaxParser;
 
 public class Server extends UnicastRemoteObject implements RemoteServer {
 

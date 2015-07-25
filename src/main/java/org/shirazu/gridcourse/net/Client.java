@@ -1,14 +1,22 @@
-package net;
+package org.shirazu.gridcourse.net;
 
-import gis.Attribute;
-import gis.AttributeType;
-import gis.ClientDynamicInfo;
-import gis.ClientStaticInfo;
-import gis.Mode;
-import gis.Node;
-import gis.Resource;
-import gis.ResourceType;
-import gui.ClientFrame;
+//============================================================================
+//Author      : Fatemeh Marzban, Amir Hossein Sojoodi
+//Version     : 0.0.1
+//Year        : 2014
+//Copyright   : GNU
+//Description : Grid Information Service in Java
+//============================================================================
+
+import org.shirazu.gridcourse.gis.Attribute;
+import org.shirazu.gridcourse.gis.AttributeType;
+import org.shirazu.gridcourse.gis.ClientDynamicInfo;
+import org.shirazu.gridcourse.gis.ClientStaticInfo;
+import org.shirazu.gridcourse.gis.Mode;
+import org.shirazu.gridcourse.gis.Node;
+import org.shirazu.gridcourse.gis.Resource;
+import org.shirazu.gridcourse.gis.ResourceType;
+import org.shirazu.gridcourse.gui.ClientFrame;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -20,7 +28,7 @@ import java.util.Date;
 
 import javax.swing.JOptionPane;
 
-import stax.StaxWriter;
+import org.shirazu.gridcourse.stax.StaxWriter;
 
 public class Client extends Thread {
 

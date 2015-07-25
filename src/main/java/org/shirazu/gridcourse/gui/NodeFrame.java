@@ -1,7 +1,15 @@
-package gui;
+package org.shirazu.gridcourse.gui;
 
-import gis.Attribute;
-import gis.Resource;
+//============================================================================
+//Author      : Fatemeh Marzban, Amir Hossein Sojoodi
+//Version     : 0.0.1
+//Year        : 2014
+//Copyright   : GNU
+//Description : Grid Information Service in Java
+//============================================================================
+
+import org.shirazu.gridcourse.gis.Attribute;
+import org.shirazu.gridcourse.gis.Resource;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

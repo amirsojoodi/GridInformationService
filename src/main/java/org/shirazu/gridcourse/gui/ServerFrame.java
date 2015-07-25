@@ -1,7 +1,15 @@
-package gui;
+package org.shirazu.gridcourse.gui;
 
-import gis.ClientDynamicInfo;
-import gis.ClientStaticInfo;
+//============================================================================
+//Author      : Fatemeh Marzban, Amir Hossein Sojoodi
+//Version     : 0.0.1
+//Year        : 2014
+//Copyright   : GNU
+//Description : Grid Information Service in Java
+//============================================================================
+
+import org.shirazu.gridcourse.gis.ClientDynamicInfo;
+import org.shirazu.gridcourse.gis.ClientStaticInfo;
 
 import java.awt.Color;
 import java.awt.Container;
@@ -27,7 +35,7 @@ import javax.swing.JSeparator;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextPane;
 
-import net.Server;
+import org.shirazu.gridcourse.net.Server;
 
 import com.jgoodies.forms.factories.CC;
 import com.jgoodies.forms.layout.FormLayout;
