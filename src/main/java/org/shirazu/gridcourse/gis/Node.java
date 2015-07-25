@@ -1,4 +1,12 @@
-package gis;
+package org.shirazu.gridcourse.gis;
+
+//============================================================================
+//Author      : Fatemeh Marzban, Amir Hossein Sojoodi
+//Version     : 0.0.1
+//Year        : 2014
+//Copyright   : GNU
+//Description : Grid Information Service in Java
+//============================================================================
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +20,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.TypedQuery;
 
-import net.Server;
+import org.shirazu.gridcourse.net.Server;
 
 @Entity
 public class Node {
