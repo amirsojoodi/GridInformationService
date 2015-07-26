@@ -10,6 +10,6 @@ When server starts it asks for which _port number_ you want it to listen on, and
 * Build with `mvn clean install`
 
 #####How to run:
-* Server: `java -cp target/lib/*:target/GridInformationService-0.0.1-SNAPSHOT.jar org.shirazu.gridcourse.gui.ServerFrame`
-* Client: `java -cp target/lib/*:target/GridInformationService-0.0.1-SNAPSHOT.jar org.shirazu.gridcourse.gui.
+* Server: `java -cp target/lib/*:target/GridInformationService-0.0.1.jar org.shirazu.gridcourse.gui.ServerFrame`
+* Client: `java -cp target/lib/*:target/GridInformationService-0.0.1.jar org.shirazu.gridcourse.gui.ClientFrame`
 
