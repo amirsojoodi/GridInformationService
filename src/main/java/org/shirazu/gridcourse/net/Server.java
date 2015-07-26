@@ -38,7 +38,7 @@ public class Server extends UnicastRemoteObject implements RemoteServer {
 	private static final String defaultFileToReceive = "ReceivedNode.xml";
 
 	// 30 minutes
-	private static final long defaultMintorWindowMillisec = 60000/* 1800000 */;
+	private static final long defaultMonitorWindowMillisec = 60000/* 1800000 */;
 
 	private EntityManagerFactory emf;
 	private static EntityManager em;
@@ -65,7 +65,7 @@ public class Server extends UnicastRemoteObject implements RemoteServer {
 
 		setSimulationMinutes(defaultSimulationMinutes);
 		setIntervalSeconds(defaultIntervalSeconds);
-		setMonitorWindowMilliseconds(defaultMintorWindowMillisec);
+		setMonitorWindowMilliseconds(defaultMonitorWindowMillisec);
 		setFileToReceive(defaultFileToReceive);
 		staxParser = new StaxParser();
 		setServerStatus(true);

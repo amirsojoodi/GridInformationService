@@ -26,7 +26,7 @@ import org.shirazu.gridcourse.gis.Attribute;
 import org.shirazu.gridcourse.gis.Node;
 import org.shirazu.gridcourse.gis.Resource;
 
-@SuppressWarnings("restriction")
+//@SuppressWarnings("restriction")
 public class StaxWriter {
 	private String nodeFile;
 

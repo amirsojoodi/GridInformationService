@@ -8,7 +8,6 @@ package org.shirazu.gridcourse.stax;
 //Description : Grid Information Service in Java
 //============================================================================
 
-
 import org.shirazu.gridcourse.gis.Attribute;
 import org.shirazu.gridcourse.gis.AttributeType;
 import org.shirazu.gridcourse.gis.Node;
@@ -30,7 +29,7 @@ import javax.xml.stream.events.EndElement;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 
-@SuppressWarnings("restriction")
+//@SuppressWarnings("restriction")
 public class StaxParser {
 	static final String NODE = "node";
 	static final String NODEID = "nodeID";
@@ -48,6 +47,7 @@ public class StaxParser {
 	public Node readNode(String nodeFile) {
 		ArrayList<Resource> resources = new ArrayList<Resource>();
 		Node node = null;
+		String tmpName = null;
 		try {
 			XMLInputFactory inputFactory = XMLInputFactory.newInstance();
 
@@ -81,10 +81,17 @@ public class StaxParser {
 									isStatic = true;
 									node = new Node();
 								}
+								if(tmpName != null){
+									node.setName(tmpName);
+								}
 							}
 
 							if (attribute.getName().toString().equals(NODENAME)) {
-								node.setName(attribute.getValue());
+								if (node != null) {
+									node.setName(attribute.getValue());
+								} else {
+									tmpName = attribute.getValue();
+								}
 							}
 
 						}
